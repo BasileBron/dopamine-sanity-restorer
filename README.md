@@ -13,6 +13,9 @@ These instructions will get you a copy of the project up and running on your loc
 Download this file and move it at the root of the repository
 [Keras 299x299 Image Model](https://s3.amazonaws.com/nsfwdetector/nsfw.299x299.h5)
 
+# How does it work
+The code will only take screenshot of the **active windows**, mainly for performance reason but also to only close windows that contain the explicit content. Then a convolutional neural network will decide if the content is explicit or not.
+
 # Authors
 - [Basile Bron](https://github.com/BasileBron)
 - [Youssef Abdelrazek](https://github.com/ya222)
