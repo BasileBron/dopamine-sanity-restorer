@@ -2,7 +2,7 @@
 # theCensor
 This project for HackSussex hackathon 2019 aims to identify and close inappropriate adult content in a Window or browser. The objective is to remove this type of content when the user did not specifically search for it.
 
-At the moment, the model detects inappropriate content and execute the hotkey ```Ctrl+W```.
+At the moment, the model detects inappropriate content and execute the hotkey ```Ctrl+W``` to close the windows or tab that has the toxic content.
 
 # Getting Started
 
@@ -15,6 +15,10 @@ Download this file and move it at the root of the repository
 
 # How does it work
 The code will only take screenshot of the **active windows**, mainly for performance reason but also to only close windows that contain the explicit content. Then a convolutional neural network will decide if the content is explicit or not.
+here is the [model](https://github.com/GantMan/nsfw_model)
+
+# Current state of the project
+It work well but still have a lot of false positive which is mainly du to the fact that screenshots of a screen are really different from the data that the model has been trained on.
 
 # Authors
 - [Basile Bron](https://github.com/BasileBron)

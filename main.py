@@ -12,8 +12,6 @@ import os
 import sys
 #hotkey
 from pyautogui import press, typewrite, hotkey
-#sound
-import playsound
 # for screen resolution
 import ctypes
 import win32gui
@@ -24,8 +22,7 @@ import shutil
 
 def punishment():
     """function for everything you want to trigger when porn is detected"""
-    #hotkey('ctrl', 'w')
-    os.system("sound.py")
+    hotkey('ctrl', 'w')
 
 def predict(img, top, left, max_left, max_top):
     # Predict single image
@@ -100,7 +97,7 @@ def loop():
     """Keep the script going."""
     #definine how long it will run
     i=0
-    while (i<100):
+    while (i<500):
         last_time = time.time()
         i=i+1
         time.sleep(0.5)
